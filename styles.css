@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+.image-text {
+    position: absolute;
+    top: 50%;  /* centers vertically */
+    left: 50%; /* centers horizontally */
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to the text for better readability */
+  }
+  
+
+#petName {
+    position: absolute;
+    top: 440px;  
+    left: 760px; 
+    transform: translate(-50%, -50%);
+    color: #33334d;
+    font-family: 'Delius', cursive;;
+    font-size: 55px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to the text for better readability */
+  }
+  
+#birthday {
+  position: absolute;
+  top: 585px;  
+  left: 560px; 
+  transform: translate(-50%, -50%);
+  color: #33334d;
+  font-family: 'Delius', cursive;;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to the text for better readability */
+  } 
+
+
+#birthmonth {
+  position: absolute;
+  top: 585px;  
+  left: 950px; 
+  transform: translate(-50%, -50%);
+  color: #33334d;
+  font-family: 'Delius', cursive;;
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to the text for better readability */
+  }  
+
+  
+#birthyear {
+  position: absolute;
+  top: 585px;  
+  left: 1120px; 
+  transform: translate(-50%, -50%);
+  color: #33334d;
+  font-family: 'Delius', cursive;;
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to the text for better readability */
+  }
+  
+
+#breed {
+  position: absolute;
+  top: 710px;  
+  left: 460px; 
+  transform: translate(-50%, -50%);
+  color: #33334d;
+  font-family: 'Delius', cursive;;
+  font-size: 29px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to the text for better readability */
+  }
+
+#gender {
+  position: absolute;
+  top: 710px;  
+  left: 1055px; 
+  transform: translate(-50%, -50%);
+  color: #33334d;
+  font-family: 'Delius', cursive;;
+  font-size: 29px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to the text for better readability */
+  }
+
+#parent {
+  position: absolute;
+  top: 840px;  
+  left: 760px; 
+  transform: translate(-50%, -50%);
+  color: #33334d;
+  font-family: 'Delius', cursive;;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to the text for better readability */
+  }
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
