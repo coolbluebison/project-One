@@ -182,8 +182,7 @@ function getPetInfo() {
 }
 
 
-
-fetch("http://127.0.0.1:3000/dogs")
+fetch("http://localhost:3000/dogs")
 .then((r) => r.json())
 .then(data => {
     console.log(data)
@@ -197,11 +196,9 @@ let listIdNames= ["name", "birthDay", "birthMonth", "birthYear", "breed", "gende
 function fillOutCert(data) {
     listIdNames.forEach((id) => {
         let element = document.getElementById(`${id}`)
-        element.textContent = data[`${id}`]
+        element.textContent = data[0][`${id}`]
     })
 } 
-
-fillOutCert()
 
 
 
