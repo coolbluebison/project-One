@@ -1,5 +1,5 @@
 const formDiv = document.querySelector(`#formDiv`)
-document.addEventListener(`DOMContentLoaded`, init());
+document.addEventListener(`DOMContentLoaded`, init);
 
 function init() {
     getPetInfo()
@@ -175,11 +175,36 @@ function getPetInfo() {
                         nextButton.id = `nextBtn`;
                         nextButton.value = "Next";
                     formDiv.append(inputLabel, nextLine, daySelector, monthSelector, yearSelector, nextLine1, nextButton);
+                    nextButton.addEventListener(`click`, (e) => {
+                        console.log(nextButton);
+                        e.preventDefault()
+                        petInfo[4] = document.querySelector(`#daySelector`).value;
+                        petInfo[5] = document.querySelector(`#monthSelector`).value;
+                        petInfo[6] = document.querySelector(`#yearSelector`).value;
+                        fetch("http://localhost:3000/dogs", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                                "Accept": "application/json",
+                            },
+                            body: JSON.stringify({
+                                name: petInfo[1],
+                                birthDay: petInfo[4],
+                                birthMonth: petInfo[5],
+                                birthYear: petInfo[6],
+                                breed: petInfo[2],
+                                gender: petInfo[3],
+                                parent: petInfo[0]
+                            }),
+                        })
+                        .then(r => r.json())
+                        .then(dog => {
+                            console.log("Here")
                 })
             })
         })
     })    
-}
+}}}
 
 
 fetch("http://localhost:3000/dogs")
