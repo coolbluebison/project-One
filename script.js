@@ -3,8 +3,13 @@ const formDiv = document.querySelector(`#formDiv`)
 document.addEventListener(`DOMContentLoaded`, init);
 
 function init() {
+    const startButton = document.getElementById("startButton")
+    startButton.addEventListener("click", (e) => {
+
+    document.getElementById("divLanding").innerHTML = ""
+    document.getElementById("divLanding").remove()
     getPetInfo()
-}
+    })}
 
 
 function getPetInfo() {
@@ -229,7 +234,7 @@ let listIdNames= ["name", "birthDay", "birthMonth", "birthYear", "breed", "gende
 
 function createCert() {
 
-    const imageDiv = document.getElementById("divTwo")
+    const imageDiv = document.getElementById("divCert")
     let imageFile = document.createElement("img")
     imageFile.src = "./PuppyBdayCertTemplate.png"
     imageDiv.appendChild(imageFile)
@@ -258,12 +263,6 @@ function fillOutCert(data) {
         element.textContent = data[0][`${id}`]
     })
 } 
-
-
-
-
-
-
 
 
 
