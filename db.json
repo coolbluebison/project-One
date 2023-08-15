@@ -1,14 +1,54 @@
 {
   "dogs": [
     {
-      "name": "",
+      "name": "Pikachu",
       "birthDay": "01st",
       "birthMonth": "January",
-      "birthYear": "2023",
-      "breed": "",
-      "gender": "",
-      "parent": "",
+      "birthYear": "2002",
+      "breed": "Thunder",
+      "gender": "Boy",
+      "parent": "Ash Ketchum",
       "id": 0
+    },
+    {
+      "name": "Layla",
+      "birthDay": "19th",
+      "birthMonth": "August",
+      "birthYear": "2020",
+      "breed": "German Shepherd Mix",
+      "gender": "Female",
+      "parent": "Baran Yildiran",
+      "id": 1
+    },
+    {
+      "name": "Takoda",
+      "birthDay": "09th",
+      "birthMonth": "September",
+      "birthYear": "2015",
+      "breed": "German Shepherd-Wolf Dog",
+      "gender": "Male",
+      "parent": "Juan",
+      "id": 2
+    },
+    {
+      "name": "Dorado",
+      "birthDay": "22nd",
+      "birthMonth": "July",
+      "birthYear": "2023",
+      "breed": "Golden Retriever",
+      "gender": "Male",
+      "parent": "Kamyar Taghavi",
+      "id": 3
+    },
+    {
+      "name": "Daisy",
+      "birthDay": "07th",
+      "birthMonth": "November",
+      "birthYear": "2013",
+      "breed": "Beagle",
+      "gender": "Female",
+      "parent": "John Wick",
+      "id": 4
     }
   ]
 }

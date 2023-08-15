@@ -181,7 +181,7 @@ function getPetInfo() {
                         // nextButton.type = `submit`;
                         // nextButton.name = `submit`;
                         nextButton.id = `nextBtn`;
-                        nextButton.value = "Next";
+                        nextButton.textContent = "Next";
                     formDiv.append(inputLabel, nextLine, daySelector, monthSelector, yearSelector, nextLine1, nextButton);
                     nextButton.addEventListener(`click`, (e) => {
                         console.log(nextButton);
@@ -189,8 +189,8 @@ function getPetInfo() {
                         petInfo[4] = document.querySelector(`#daySelector`).value;
                         petInfo[5] = document.querySelector(`#monthSelector`).value;
                         petInfo[6] = document.querySelector(`#yearSelector`).value;
-                        fetch("http://localhost:3000/dogs/0", {
-                            method: "PATCH",
+                        fetch("http://localhost:3000/dogs", {
+                            method: "POST",
                             headers: {
                                 "Content-Type": "application/json",
                                 "Accept": "application/json",
@@ -260,7 +260,7 @@ function createCert() {
 function fillOutCert(data) {
     listIdNames.forEach((id) => {
         let element = document.getElementById(`${id}`)
-        element.textContent = data[0][`${id}`]
+        element.textContent = data[data.length-1][`${id}`]
     })
 } 
 
