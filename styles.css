@@ -129,7 +129,7 @@ input#puppyFormInput{
     font-size: 30px;
 
 }
-input#nextBtn {
+#nextBtn {
     margin: 20px 0px 0px 0px;
     height: 50px;
     width: 100px;

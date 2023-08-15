@@ -6,8 +6,6 @@ function init() {
 }
 
 
-
-
 function getPetInfo() {
     const petInfo = [`parent name`, `puppy's name`, `puppy's breed`, `puppy's gender`, `day of birth`, `month of birth`, `year of birth`];
 
@@ -128,6 +126,7 @@ function getPetInfo() {
                         inputLabel.id = `puppyInputLabel`;
                         inputLabel.textContent = `What is the puppy's date of birth?`;
                     const daySelector = document.createElement(`select`);
+                        daySelector.id = `daySelector`;
                         daySelector.className = `dateSelector`;
                     for (let day = 1; day <= 31; day++) {
                         const option = document.createElement("option");
@@ -153,6 +152,7 @@ function getPetInfo() {
                       }
                     const monthsInYear = [`January`, `February`, `March`, `April`, `May`, `June`, `July`, `August`, `September`, `October`, `November`, `December`];
                     const monthSelector = document.createElement(`select`);
+                        monthSelector.id = `monthSelector`;
                         monthSelector.className = `dateSelector`;
                     monthsInYear.forEach(month => {
                         const option = document.createElement("option");
@@ -161,7 +161,8 @@ function getPetInfo() {
                             monthSelector.append(option);
                     })
                     const yearSelector = document.createElement(`select`);
-                    yearSelector.className = `dateSelector`;
+                        yearSelector.id = `yearSelector`;
+                        yearSelector.className = `dateSelector`;
                     for (let year = 2023; year >= 1950; year--){
                         const option = document.createElement("option");
                             option.value = String(year);
@@ -170,14 +171,43 @@ function getPetInfo() {
                     }
                     const nextLine = document.createElement(`br`);
                     const nextLine1 = document.createElement(`br`);
-                    const nextButton = document.createElement(`input`);
-                        nextButton.type = `submit`;
-                        nextButton.name = `submit`;
+                    const nextButton = document.createElement(`button`);
+                        // nextButton.type = `submit`;
+                        // nextButton.name = `submit`;
                         nextButton.id = `nextBtn`;
                         nextButton.value = "Next";
                     formDiv.append(inputLabel, nextLine, daySelector, monthSelector, yearSelector, nextLine1, nextButton);
+                    nextButton.addEventListener(`click`, (e) => {
+                        console.log(nextButton);
+                        e.preventDefault()
+                        petInfo[4] = document.querySelector(`#daySelector`).value;
+                        petInfo[5] = document.querySelector(`#monthSelector`).value;
+                        petInfo[6] = document.querySelector(`#yearSelector`).value;
+                        fetch("http://localhost:3000/dogs", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                                "Accept": "application/json",
+                            },
+                            body: JSON.stringify({
+                                name: petInfo[1],
+                                birthDay: petInfo[4],
+                                birthMonth: petInfo[5],
+                                birthYear: petInfo[6],
+                                breed: petInfo[2],
+                                gender: petInfo[3],
+                                parent: petInfo[0]
+                            }),
+                        })
+                        .then(r => r.json())
+                        .then(dog => {
+                            console.log("Here")
+                            // formDiv.innerHTML = "";
+                        })
+                    })
                 })
             })
         })
     })    
 }
+

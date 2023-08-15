@@ -1,14 +1,134 @@
 {
-    "dogs":[
-        {
-            "name": "",
-            "birthDay": "",
-            "birthMonth": "",
-            "birthYear": "",
-            "breed": "",
-            "gender": "",
-            "parent": "",
-            "id": 0
-        }
-    ]
+  "dogs": [
+    {
+      "name": "",
+      "birthDay": "",
+      "birthMonth": "",
+      "birthYear": "",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 0
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 1
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 2
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 6
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 9
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 10
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 11
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 12
+    }
+  ]
 }
