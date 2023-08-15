@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 .image-text {
     position: absolute;
@@ -105,9 +106,49 @@
 
 
 
-  
-  
-  
-  
-  
-  
+
+div#formDiv {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 250px 0px 0px 0px;
+}
+h1#puppyInputLabel{
+    font-size: 67px;
+    font-weight: 350;
+    margin: 0px 0px 20px 0px;
+}
+input#puppyFormInput{
+    height: 45px;
+    width: 500px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+input#nextBtn {
+    margin: 20px 0px 0px 0px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7f50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+select.dateSelector{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin: 0px 2px 0px 2px;
+    border-radius: 5px;
+}

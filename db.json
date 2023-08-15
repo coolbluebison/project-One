@@ -1,0 +1,14 @@
+{
+    "dogs":[
+        {
+            "name": "",
+            "birthDay": "",
+            "birthMonth": "",
+            "birthYear": "",
+            "breed": "",
+            "gender": "",
+            "parent": "",
+            "id": 0
+        }
+    ]
+}
