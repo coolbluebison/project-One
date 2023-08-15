@@ -1,13 +1,13 @@
 {
   "dogs": [
     {
-      "name": "Takoda",
-      "birthDay": "06th",
-      "birthMonth": "October",
-      "birthYear": "1977",
-      "breed": "Superdog",
-      "gender": "non-binary",
-      "parent": "Juanov Juanas",
+      "name": "Kam",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "1991",
+      "breed": "Iranian",
+      "gender": "male",
+      "parent": "Terrence",
       "id": 0
     }
   ]
