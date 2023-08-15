@@ -1,14 +1,14 @@
 {
   "dogs": [
     {
-      "name": "",
-      "birthDay": "",
-      "birthMonth": "",
-      "birthYear": "",
-      "breed": "",
-      "gender": "",
-      "parent": "",
+      "name": "Takota",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2011",
+      "breed": "gsd",
+      "gender": "123",
+      "parent": "Juana",
       "id": 0
     }
-     ]
+  ]
 }
