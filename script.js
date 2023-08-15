@@ -7,7 +7,6 @@ function init() {
 
 
 
-
 function getPetInfo() {
     const petInfo = [`parent name`, `puppy's name`, `puppy's breed`, `puppy's gender`, `day of birth`, `month of birth`, `year of birth`];
 
@@ -193,7 +192,7 @@ fetch("http://127.0.0.1:3000/dogs")
 })
 
 
-let listIdNames= ["petName", "birthday", "birthmonth", "birthyear", "breed", "gender", "parent"]
+let listIdNames= ["name", "birthDay", "birthMonth", "birthYear", "breed", "gender", "parent"]
 
 function fillOutCert(data) {
     listIdNames.forEach((id) => {
