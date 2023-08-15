@@ -202,14 +202,18 @@ function getPetInfo() {
                         })
                         .then(r => r.json())
                         .then(dog => {
-                            console.log("Here")
+                            
+                            formDiv.innerHTML = ""
+
+
+                            
                             fetch("http://localhost:3000/dogs")
                                 .then((r) => r.json())
                                 .then(data => {
-                                console.log(data)
-                                fillOutCert(data)
+                                    createCert()
+                                    fillOutCert(data)
                                 })
-                            // formDiv.innerHTML = ""
+                            
                         })
                     })
                 })
@@ -220,11 +224,33 @@ function getPetInfo() {
 
 
 
-
-
-
-
 let listIdNames= ["name", "birthDay", "birthMonth", "birthYear", "breed", "gender", "parent"]
+
+
+function createCert() {
+
+    const imageDiv = document.getElementById("divTwo")
+    let imageFile = document.createElement("img")
+    imageFile.src = "./PuppyBdayCertTemplate.png"
+    imageDiv.appendChild(imageFile)
+
+    listIdNames.forEach((id) => {
+        let element = document.createElement("div")
+        element.id = id
+        imageDiv.appendChild(element)
+    })
+    
+/* <div class="image-container">
+<img src="PuppyBdayCertTemplate.png" alt="Description of Image">
+<div class="image-text" id="name"></div>
+<div class="image-text" id="birthDay"></div>
+<div class="image-text" id="birthMonth"></div>
+<div class="image-text" id="birthYear"></div>
+<div class="image-text" id="breed"></div>
+<div class="image-text" id="gender"></div>
+<div class="image-text" id="parent"></div> */
+}
+
 
 function fillOutCert(data) {
     listIdNames.forEach((id) => {
@@ -232,6 +258,13 @@ function fillOutCert(data) {
         element.textContent = data[0][`${id}`]
     })
 } 
+
+
+
+
+
+
+
 
 
 
