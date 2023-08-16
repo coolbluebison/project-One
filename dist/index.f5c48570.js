@@ -791,6 +791,14 @@ function getPetInfo() {
                             fetch("http://localhost:3000/dogs").then((r)=>r.json()).then((data)=>{
                                 createCert();
                                 fillOutCert(data);
+                                const downloadButton = document.createElement("button");
+                                downloadButton.textContent = "Click to Download";
+                                downloadButton.id = "downloadBtn";
+                                const pdfButtonSection = document.getElementById("pdfButton");
+                                pdfButtonSection.appendChild(downloadButton);
+                                downloadButton.addEventListener("click", (e)=>{
+                                    generatePDF();
+                                });
                             });
                         });
                     });
@@ -833,13 +841,6 @@ function fillOutCert(data) {
         element.textContent = data[data.length - 1][`${id}`];
     });
 }
-const downloadButton = document.createElement("button");
-downloadButton.textContent = "Click to Download";
-const pdfButtonSection = document.getElementById("pdfButton");
-pdfButtonSection.appendChild(downloadButton);
-downloadButton.addEventListener("click", (e)=>{
-    generatePDF();
-});
 function generatePDF() {
     // Convert the content to a canvas
     (0, _html2CanvasDefault.default)(document.getElementById("divCert")).then((canvas)=>{

@@ -221,6 +221,19 @@ function getPetInfo() {
                                 .then(data => {
                                     createCert()
                                     fillOutCert(data)
+
+                                    const downloadButton = document.createElement("button")
+                                    downloadButton.textContent = "Click to Download"
+                                    downloadButton.id = "downloadBtn"
+                                    const pdfButtonSection = document.getElementById("pdfButton")
+                                    pdfButtonSection.appendChild(downloadButton)
+
+
+                                    downloadButton.addEventListener("click", (e) => {
+                                        generatePDF()
+                                    })
+
+
                                 })
                             
                         })
@@ -270,15 +283,6 @@ function fillOutCert(data) {
 
 
 
-const downloadButton = document.createElement("button")
-downloadButton.textContent = "Click to Download"
-const pdfButtonSection = document.getElementById("pdfButton")
-pdfButtonSection.appendChild(downloadButton)
-
-
-downloadButton.addEventListener("click", (e) => {
-    generatePDF()
-})
 
 
 function generatePDF() {

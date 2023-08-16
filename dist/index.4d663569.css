@@ -157,7 +157,7 @@ body {
   background-color: #fff6e5;
   border-radius: 10px;
   max-width: 900px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 20px;
   overflow: hidden;
   box-shadow: 0 0 20px #0000001a;
@@ -220,6 +220,23 @@ p {
   text-decoration: none;
   transition: all .3s;
   display: inline-block;
+}
+
+#downloadBtn {
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: coral;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
