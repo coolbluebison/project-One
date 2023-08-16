@@ -51,64 +51,14 @@
       "id": 4
     },
     {
-      "name": "EEEE",
-      "birthDay": "01st",
-      "birthMonth": "January",
-      "birthYear": "2023",
-      "breed": "VVVV",
-      "gender": "TTT",
-      "parent": "AAAAA",
+      "name": "Minda",
+      "birthDay": "05th",
+      "birthMonth": "May",
+      "birthYear": "2022",
+      "breed": "shorthair",
+      "gender": "female",
+      "parent": "David",
       "id": 5
-    },
-    {
-      "name": "1111",
-      "birthDay": "01st",
-      "birthMonth": "January",
-      "birthYear": "2023",
-      "breed": "222",
-      "gender": "33",
-      "parent": "1111",
-      "id": 6
-    },
-    {
-      "name": "124124",
-      "birthDay": "01st",
-      "birthMonth": "January",
-      "birthYear": "2023",
-      "breed": "123123",
-      "gender": "123123",
-      "parent": "21312",
-      "id": 7
-    },
-    {
-      "name": "",
-      "birthDay": "01st",
-      "birthMonth": "January",
-      "birthYear": "2023",
-      "breed": "",
-      "gender": "",
-      "parent": "",
-      "id": 8
-    },
-    {
-      "name": "",
-      "birthDay": "01st",
-      "birthMonth": "January",
-      "birthYear": "2023",
-      "breed": "",
-      "gender": "",
-      "parent": "",
-      "id": 9
-    },
-    {
-      "name": "",
-      "birthDay": "01st",
-      "birthMonth": "January",
-      "birthYear": "2023",
-      "breed": "",
-      "gender": "",
-      "parent": "",
-      "id": 10
     }
   ]
 }
