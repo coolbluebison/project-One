@@ -266,6 +266,35 @@ function fillOutCert(data) {
 
 
 
+// const downloadButton = document.createElement("button")
+// const pdfButtonSection = document.getElementById("pdfButton")
+
+// downloadButton.addEventListener("click", (e) => {
+//     generatePDF()
+// })
+
+
+
+// function generatePDF() {
+
+//     // Convert the content to a canvas
+//     html2canvas(document.getElementById('divCert')).then(canvas => {
+//         const imgData = canvas.toDataURL('image/png')
+//         const pdf = new jsPDF()
+//         pdf.addImage(imgData, 'PNG', 0, 0)
+//         pdf.save("download.pdf")
+//     });
+// }
+
+
+
+
+
+
+
+
+
+
 
 
 // const PDFDocument = require("pdfkit")
@@ -289,7 +318,4 @@ function fillOutCert(data) {
 // doc.end();
 
 
-
-
-// whatsupppp
 
