@@ -1,3 +1,5 @@
+const { jsPDF } = require("jspdf")
+
 const formDiv = document.querySelector(`#formDiv`)
 
 document.addEventListener(`DOMContentLoaded`, init);
@@ -184,7 +186,7 @@ function getPetInfo() {
                         nextButton.textContent = "Next";
                     formDiv.append(inputLabel, nextLine, daySelector, monthSelector, yearSelector, nextLine1, nextButton);
                     nextButton.addEventListener(`click`, (e) => {
-                        console.log(nextButton);
+                        console.log(nextButton)
                         e.preventDefault()
                         petInfo[4] = document.querySelector(`#daySelector`).value;
                         petInfo[5] = document.querySelector(`#monthSelector`).value;
@@ -266,32 +268,27 @@ function fillOutCert(data) {
 
 
 
-// const downloadButton = document.createElement("button")
-// const pdfButtonSection = document.getElementById("pdfButton")
-
-// downloadButton.addEventListener("click", (e) => {
-//     generatePDF()
-// })
+const downloadButton = document.createElement("button")
+downloadButton.textContent = "Click to Download"
+const pdfButtonSection = document.getElementById("pdfButton")
+pdfButtonSection.appendChild(downloadButton)
 
 
-
-// function generatePDF() {
-
-//     // Convert the content to a canvas
-//     html2canvas(document.getElementById('divCert')).then(canvas => {
-//         const imgData = canvas.toDataURL('image/png')
-//         const pdf = new jsPDF()
-//         pdf.addImage(imgData, 'PNG', 0, 0)
-//         pdf.save("download.pdf")
-//     });
-// }
+downloadButton.addEventListener("click", (e) => {
+    generatePDF()
+})
 
 
+function generatePDF() {
 
-
-
-
-
+    // Convert the content to a canvas
+    html2canvas(document.getElementById('divCert')).then(canvas => {
+        const imgData = canvas.toDataURL('image/png')
+        const pdf = new jsPDF()
+        pdf.addImage(imgData, 'PNG', 0, 0)
+        pdf.save("download.pdf")
+    });
+}
 
 
 
