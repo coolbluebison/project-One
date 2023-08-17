@@ -59,6 +59,36 @@
       "gender": "female",
       "parent": "David",
       "id": 5
+    },
+    {
+      "name": "Baran",
+      "birthDay": "16th",
+      "birthMonth": "January",
+      "birthYear": "2008",
+      "breed": "Niagra Hound",
+      "gender": "Helecopter",
+      "parent": "Johnathon Johnson",
+      "id": 6
+    },
+    {
+      "name": "Gerald",
+      "birthDay": "15th",
+      "birthMonth": "December",
+      "birthYear": "2021",
+      "breed": "Chihuahua",
+      "gender": "male",
+      "parent": "David",
+      "id": 7
+    },
+    {
+      "name": "",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "",
+      "gender": "",
+      "parent": "",
+      "id": 8
     }
   ]
 }
