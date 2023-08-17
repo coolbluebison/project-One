@@ -869,7 +869,7 @@ function generatePDF() {
  // doc.text(birthdate1, 200, 150)
  // doc.end();
 
-},{"./assets/PuppyBdayCertTemplate.png":"6AvL9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","html2canvas":"j1W5C","jspdf":"22HlH"}],"6AvL9":[function(require,module,exports) {
+},{"./assets/PuppyBdayCertTemplate.png":"6AvL9","html2canvas":"j1W5C","jspdf":"22HlH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6AvL9":[function(require,module,exports) {
 module.exports = require("6c177a7eabbc9d1b").getBundleURL("lORN7") + "PuppyBdayCertTemplate.24e6bb2e.png" + "?" + Date.now();
 
 },{"6c177a7eabbc9d1b":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -906,36 +906,6 @@ function getOrigin(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
-
-},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
 
 },{}],"j1W5C":[function(require,module,exports) {
 /*!
@@ -29721,7 +29691,37 @@ function unzipSync(data) {
     return files;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"26NyR":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"26NyR":[function(require,module,exports) {
 module.exports = Promise.resolve(module.bundle.root("j1W5C"));
 
 },{}],"027u4":[function(require,module,exports) {
