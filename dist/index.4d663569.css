@@ -1,0 +1,242 @@
+@import "https://fonts.googleapis.com/css2?family=Delius&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap";
+.image-text {
+  color: #fff;
+  text-shadow: 2px 2px 4px #00000080;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#name {
+  color: #33334d;
+  text-shadow: 2px 2px 4px #00000080;
+  font-family: Delius, cursive;
+  font-size: 55px;
+  font-weight: bold;
+  position: absolute;
+  top: 440px;
+  left: 760px;
+  transform: translate(-50%, -50%);
+}
+
+#birthDay {
+  color: #33334d;
+  text-shadow: 2px 2px 4px #00000080;
+  font-family: Delius, cursive;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 585px;
+  left: 560px;
+  transform: translate(-50%, -50%);
+}
+
+#birthMonth {
+  color: #33334d;
+  text-shadow: 2px 2px 4px #00000080;
+  font-family: Delius, cursive;
+  font-size: 38px;
+  font-weight: bold;
+  position: absolute;
+  top: 585px;
+  left: 950px;
+  transform: translate(-50%, -50%);
+}
+
+#birthYear {
+  color: #33334d;
+  text-shadow: 2px 2px 4px #00000080;
+  font-family: Delius, cursive;
+  font-size: 38px;
+  font-weight: bold;
+  position: absolute;
+  top: 585px;
+  left: 1120px;
+  transform: translate(-50%, -50%);
+}
+
+#breed {
+  color: #33334d;
+  text-shadow: 2px 2px 4px #00000080;
+  font-family: Delius, cursive;
+  font-size: 29px;
+  font-weight: bold;
+  position: absolute;
+  top: 710px;
+  left: 460px;
+  transform: translate(-50%, -50%);
+}
+
+#gender {
+  color: #33334d;
+  text-shadow: 2px 2px 4px #00000080;
+  font-family: Delius, cursive;
+  font-size: 29px;
+  font-weight: bold;
+  position: absolute;
+  top: 710px;
+  left: 1055px;
+  transform: translate(-50%, -50%);
+}
+
+#parent {
+  color: #33334d;
+  text-shadow: 2px 2px 4px #00000080;
+  font-family: Delius, cursive;
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  top: 840px;
+  left: 760px;
+  transform: translate(-50%, -50%);
+}
+
+div#formDiv {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 250px 0 0;
+  font-family: Roboto, sans-serif;
+}
+
+h1#puppyInputLabel {
+  margin: 0 0 20px;
+  font-size: 67px;
+  font-weight: 350;
+}
+
+input#puppyFormInput {
+  border-radius: 10px;
+  width: 500px;
+  height: 45px;
+  padding: 10px 5px;
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#nextBtn {
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: coral;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  width: 100px;
+  height: 50px;
+  margin: 20px 0 0;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+select.dateSelector {
+  border-radius: 5px;
+  margin: 0 2px;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+}
+
+body {
+  color: #4b4b4b;
+  background-color: #fffae3;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+#divLanding {
+  text-align: center;
+  background-color: #fff6e5;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #0000001a;
+}
+
+h1, h2, h4, p {
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #c95d0a;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+h2 {
+  color: #c95d0a;
+  font-size: 27px;
+  font-weight: bolder;
+}
+
+#pupPic {
+  border-radius: 15px;
+  max-width: 45%;
+  max-height: 45%;
+  box-shadow: 0 0 20px #0000001a;
+}
+
+h5 {
+  color: #b8860b;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+p {
+  color: #6c6c6c;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (width <= 768px) {
+  #divLanding {
+    margin: 20px 10px;
+  }
+}
+
+#startButton {
+  color: #fff;
+  text-align: center;
+  opacity: .6;
+  cursor: pointer;
+  background-color: #f4511e;
+  border: none;
+  margin: 4px 2px;
+  padding: 16px 32px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+}
+
+#downloadBtn {
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: coral;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
