@@ -59,6 +59,46 @@
       "gender": "female",
       "parent": "David",
       "id": 5
+    },
+    {
+      "name": "Willow",
+      "birthDay": "22nd",
+      "birthMonth": "May",
+      "birthYear": "2018",
+      "breed": "Sheltie",
+      "gender": "Female",
+      "parent": "Cristal",
+      "id": 6
+    },
+    {
+      "name": "Bulbasaur",
+      "birthDay": "01st",
+      "birthMonth": "January",
+      "birthYear": "2023",
+      "breed": "Pokemon",
+      "gender": "Male",
+      "parent": "Emre Kagan Cicek",
+      "id": 7
+    },
+    {
+      "name": "Coco",
+      "birthDay": "14th",
+      "birthMonth": "July",
+      "birthYear": "2012",
+      "breed": "Havanese-Schitzu",
+      "gender": "Female",
+      "parent": "Ryan",
+      "id": 8
+    },
+    {
+      "name": "Layla",
+      "birthDay": "29th",
+      "birthMonth": "August",
+      "birthYear": "2020",
+      "breed": "German Shepherd Mix",
+      "gender": "Female",
+      "parent": "Alexandra and Baran Yildiran",
+      "id": 9
     }
   ]
 }
